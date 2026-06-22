@@ -71,4 +71,4 @@ The eval set from this project becomes the baseline. Any query that currently pa
 
 ---
 
-*Project 1 source: [github link] | Built with Claude claude-sonnet-4-6, Python, Streamlit*
+*Project 1 source: [github.com/sharathnarayanswamy/Retail_catalog_agent](https://github.com/sharathnarayanswamy/Retail_catalog_agent) | Built with Claude claude-sonnet-4-6, Python, Streamlit*
