@@ -1,0 +1,15 @@
+{"id": 1, "band": "easy", "query": "show me running shoes", "expected": "Searches for Sports footwear (usage=Sports or type=Sports Shoes). Returns sports footwear results."}
+{"id": 2, "band": "easy", "query": "I want a blue jacket", "expected": "Searches type=Jackets, attributes.colour=Blue. Returns blue jackets."}
+{"id": 3, "band": "easy", "query": "women's formal shirts", "expected": "Searches type=Shirts, gender=Women, usage=Formal. Returns formal shirts for women."}
+{"id": 4, "band": "easy", "query": "black jeans under £60", "expected": "Searches type=Jeans, colour=Black, max_price=60. Returns black jeans within budget."}
+{"id": 5, "band": "medium", "query": "a warm jacket for winter, nothing over £100", "expected": "Maps 'warm'/'winter' to season=Winter or Fall. Searches Jackets with max_price=100."}
+{"id": 6, "band": "medium", "query": "something warm and cosy, under £100, not black", "expected": "season=Winter or Fall, max_price=100, exclude colour=Black. Returns varied warm items."}
+{"id": 7, "band": "medium", "query": "casual tops for women, nothing over £40", "expected": "subcategory=Topwear or category=Apparel, gender=Women, usage=Casual, max_price=40."}
+{"id": 8, "band": "medium", "query": "smart trousers for a job interview", "expected": "Maps 'smart'/'job interview' to usage=Formal. Searches type=Trousers with usage=Formal."}
+{"id": 9, "band": "medium", "query": "summer dresses or light tops in white", "expected": "season=Summer, colour=White (or near-white). May need two searches if no dresses exist."}
+{"id": 10, "band": "hard", "query": "something for a rainy festival weekend", "expected": "Interprets as casual outdoor — usage=Casual, possibly Jackets/Coats. May call list_categories first. Returns practical outerwear."}
+{"id": 11, "band": "hard", "query": "I need a city break outfit — comfortable but not sloppy", "expected": "Maps 'city break' to usage=Casual, avoids Sports. Searches tops + bottoms separately or combined."}
+{"id": 12, "band": "hard", "query": "cosy Sunday afternoon at home vibes", "expected": "Maps 'cosy'/'home' to usage=Casual, season=Fall or Winter. Returns Sweaters/Sweatshirts/Loungewear."}
+{"id": 13, "band": "hard", "query": "I want to look put-together without trying too hard", "expected": "Smart casual — usage=Casual or Formal, not Sports. Agent may ask a clarifying question or search shirts/chinos."}
+{"id": 14, "band": "ambiguous", "query": "a gift for my dad", "expected": "Too vague to search. Agent must ask ONE clarifying question (budget? clothing type? occasion?). Must NOT invent products."}
+{"id": 15, "band": "ambiguous", "query": "something nice", "expected": "Too vague. Agent must ask ONE clarifying question. Must NOT invent products or guess randomly."}

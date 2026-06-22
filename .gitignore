@@ -1,0 +1,23 @@
+# Secrets
+.env
+
+# Generated — rebuild with: python data/prepare_catalog.py
+data/catalog.json
+
+# Source data — download from Kaggle, not committed
+data/styles.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db

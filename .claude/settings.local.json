@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\shara\\\\AI projects\\\\Commerce\\\\P1\\\\data\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\shara\\\\AI projects\\\\Commerce\\\\P1\\\\src\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\shara\\\\AI projects\\\\Commerce\\\\P1\\\\evals\")",
+      "PowerShell(python --version)",
+      "PowerShell(python -m pip --version)",
+      "PowerShell(python3 --version 2>$null)",
+      "PowerShell(py --version 2>$null)",
+      "PowerShell(Get-Command conda, uv, node -ErrorAction SilentlyContinue)"
+    ]
+  }
+}
